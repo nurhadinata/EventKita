@@ -1,0 +1,140 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f3ef;
+}
+  
+.wrapper {
+    height: 600px;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+}
+.wrapper .img-bx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.img-bx::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+.img-bx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+
+/*==================form===============*/
+.wrapper .content-bx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.content-bx .form-bx h2{
+    color: #151414;
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.content-bx .form-bx h2 span{
+    color: red;
+}
+.content-bx .form-bx .input-bx{
+    margin-bottom: 20px;
+}
+.content-bx .form-bx .option label,
+.content-bx .form-bx .quantity label,
+.content-bx .form-bx .input-bx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color:#151414;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.content-bx .form-bx .input-bx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #151414;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+}
+.content-bx .form-bx .option select{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #151414;
+    font-size: 16px;
+    color: #151414;
+    background: transparent
+}
+.content-bx .form-bx .option select option{
+    color: #151414;
+}
+.content-bx .form-bx .quantity input{
+    width: 20%;
+    padding: 10px 10px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid red;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    margin: 20px 0 0 10px;
+}
+.content-bx .form-bx .input-bx input[type="submit"]{
+    background:#17a2b8;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.content-bx .form-bx .input-bx input[type="submit"]:hover{
+    background: #0b8ca0;
+}
+.content-bx .form-bx .input-bx p{
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.content-bx .form-bx .input-bx p a{
+    color: red;
+    font-weight: 300;
+}
+
+/*=======Invoice=====*/
+.content-bx .form-bx .details{
+ margin-bottom: 10px;
+}
+.content-bx .form-bx .details table{
+    color: #fff;
+}

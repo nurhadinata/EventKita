@@ -1,0 +1,250 @@
+
+header .logo{
+    color: #151414;
+}
+header .navigation li a{
+    color: #151414;
+}
+header.sticky .logo{
+    color: #fff;
+}
+header.sticky .navigation li a{
+    color: #fff;
+}
+
+/*===========Content==============*/
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery{
+    width: 100%;
+    display: block;
+    min-height: 100vh;
+    padding: 100px 0;
+    background: #f4f3ef;
+}
+.gallery .gallery-filter{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.gallery .gallery-filter .filter-item{
+    color: #17a2b8;
+    font-size: 14px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+}
+
+.gallery .gallery-filter .filter-item.active{
+    color: red;
+    border-color: red;
+}
+
+.gallery .gallery-item.hide{
+    display: none;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*===========Searchbox==============*/
+.gallery .container .searchBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: #141515;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+
+}
+
+.gallery .container .searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.gallery .container .searchBox:hover > .searchButton {
+  background: #17a2b8;
+  color : #fff;
+}
+
+.gallery .container .searchButton {
+    color: #17a2b8;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.gallery .container .searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+/*==========Card==============*/
+
+.gallery .container .card-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-box .card {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 180px 180px 10px;
+    grid-template-areas: "image" "text" "stats";
+  
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(82, 80, 80, 0.5);
+    text-align: center;
+}
+.gallery .container .card-box .card-image{
+    grid-area: image;
+  }
+.gallery .container .card-box .card-text {
+    grid-area: text;
+}
+.gallery .container .card-box .card-stats {
+    grid-area: stats; 
+}
+.gallery .container .card-box .card-image{
+    grid-area: image;
+    background-size: cover;
+}
+
+.gallery .container .card-box .card-text {
+    grid-area: text;
+    text-align: left;
+    margin: 85px 0 0 15px;
+}
+.gallery .container .card-box .card-text .date {
+    color: #17a2b8;
+    font-size:13px;
+}
+.gallery .container .card-box .card-text p{
+    color: #343a40;
+    font-size:12px;
+    font-weight: 300;
+}
+.gallery .container .card-box .card-text a{
+    margin-left: 160px;
+    text-decoration: none;
+    color:  #17a2b8;
+    font-size: 12px;
+    font-weight: 300;
+}
+.gallery .container .card-box .card-text a:hover{
+    color: #ffc107;
+}
+.gallery .container .card-box .card-text h2 {
+    font-size:20px;
+    margin: 0;
+    color: #151414;
+}
+
+.gallery .container .card-box .card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.gallery .container .card-box .card {
+    transition: 0.5s;
+    cursor: pointer;
+    margin:30px;
+}
+
+/*===========search===========*/
+
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 40px;
+    height: 40px;
+    background: #2b2b2b;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 5px;
+    top: 10px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: red;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 450px;
+    cursor: pointer;
+    background: #fff;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    color: #000;
+}

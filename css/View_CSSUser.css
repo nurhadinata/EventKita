@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    background: #151414;
+}
+::after ::before{
+    box-sizing: border-box;
+}
+.section{
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+}
+.section .container{
+  margin-top: 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+}
+.padd-15{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.main-content{
+    padding-left: 270px;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Monserrat', sans-serif;
+    padding: 12px 35px;
+    color: #fff;
+    border-radius: 40px;
+    transition: all .3s ease;
+    display: inline-block;
+    white-space: nowrap;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+/*Aside*/
+.aside{
+    width: 270px;
+    background: #d40000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 10;
+    padding: 30px;
+}
+.aside .nav-toggler{
+    height: 40px;
+    width: 45px;
+    border: 1px solid #d4d4e3;
+    background-color:  #fdf9ff;
+    position: fixed;
+    top: 30px;
+    left: 300px;
+    border-radius: 5px;
+    z-index: 11;
+    cursor: pointer;
+    /*display: flex;*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.aside .nav-toggler span{
+    color:  #35bc9b;
+}
+.aside .logo{
+    padding: 30px 0;
+}
+.aside .logo a{
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.aside .logo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.aside .nav{
+    margin: 80px 0;
+    list-style: none;
+    padding: 0;
+}
+.aside .nav .nav_items{
+    display: block;
+    border-bottom: 1px solid #e8defc;
+    transition: all .3s ease;
+    text-transform: capitalize;
+}
+.aside .nav .nav_items a{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+.aside .nav .nav_items:not(.active) :hover{
+    padding-left: 10px;
+}
+.aside .nav .nav_items a i{
+    margin-right: 5px;
+}
+
+/*=========Nav Bar=========*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+header .logo span{
+    color: red;
+}
+header .navigation {
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 40px;
+}
+header .navigation li .button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+/*=======JS============*/
+header.sticky{
+    background: #2b2b2b;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 15px 100px;
+}
